@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Registration Page</title>
+	</head>
+	<body>
+		<form action="/register_user/" method="POST">
+			{% csrf_token %}
+			<table>
+				<tr><th>User Name</th><td><input type="text" name="user"></td></tr>
+				<tr><th>Employee Identity</th><td><input type="text" name="emp_id"></td></tr>
+				<tr><th>Password</th><td><input type="password" name="pwd1"></td></tr>
+				<tr><th>Confirm Pasword</th><td><input type="password" name="pwd2"></td></tr>
+				<tr><th>Email</th><td><input type="text" name="email"></td></tr>
+				<tr><th>Mobile Number</th><td><input type="text" name="mob"></td></tr>
+				<tr><th>Date of Birth</th><td><input type="text" name="dob"></td></tr>
+				<tr><th>Salary</th><td><input type="text" name="sal"></td></tr>
+				<tr><td><input type="submit" value="Register"></td><td><input type="reset" value="Reset"></td></tr>
+			</table>
+		</form>
+	</body>
+</html>
